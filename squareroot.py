@@ -8,20 +8,27 @@
 
 Number = int(input('Please enter a postive number: '))
 guess = 1 # guess
+maxIterations = 10
 
-def formula(Number):
- x0 = guess 
- fx = x0**2 - Number
- yprime = 2*x0  
- x1 = x0 - fx/yprime
- x0 = x1
+def newtonsMethod(Number):
+ x0 = guess
+ 
+ for i in range(maxIterations):
+  fx = x0**2 - Number
+  yprime = 2*x0  
+  x1 = x0 - fx/yprime
+  x0=x1
 
+ return x1
  
  
- 
-
   
-print(formula(Number))
+ 
+
+print(newtonsMethod(Number))
+  
+
+     
 
 
  
