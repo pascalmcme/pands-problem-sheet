@@ -1,5 +1,5 @@
-import numpy as np
-import matplotlib.pyplot as plt
+import numpy as np # import tools to work with arrays.
+import matplotlib.pyplot as plt # import tools to make plots. 
 
 
 
@@ -16,9 +16,9 @@ hx = x*x*x
 plt.plot(x,fx, label = 'f(x)=x') # plot each of the functions.  
 plt.plot(x,hx, label = 'g(x)=x^2') 
 plt.plot(x,gx, label = 'h(x)=x^3')
-plt.title("My Plot")
-plt.legend()
-plt.show()git
+plt.title("My Plot") # create a title
+plt.legend() # add a legend
+plt.show()
 
 
 

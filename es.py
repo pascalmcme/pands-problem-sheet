@@ -1,9 +1,6 @@
 
 import sys # provides tool to support command line arguements
 
-#opts = [opt for opt in sys.argv[1:] if opt.startswith(" ")]
-#args = [arg for arg in sys.argv[1:] if not arg.startswith(" ")]
-
 
 
 filename = sys.argv[1]  # takes the file name from the second command line option. 
@@ -30,5 +27,7 @@ editString(string) # we apply the funtion to return the number of e's
 
 
 #https://realpython.com/python-command-line-arguments/#file-handling
+#reference for using command additional command line arguements
 
-#https://www.w3schools.com/python/ref_string_count.asp  - count string
+#https://www.w3schools.com/python/ref_string_count.asp  - 
+# reference for editing string

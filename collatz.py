@@ -1,13 +1,10 @@
-# This programme takes positive inegers and divided by two if even, and multiplies by three and adds one if odd. 
-# The loop stop when the new integer is equal to one.
-# The list of integers are returned 
-
-
-number = int(input('Please enter a positive integer:'))  #Initialise 
 
 
 numbers = [] #create a list called numbers
 numbers.append(number) #To include the initial variable I first append the original number to the list.
+
+
+number = int(input('Please enter a positive integer:'))  #Initialise the loop. 
 
 
 while number !=1:  # Creats a loop that stops when number = 1 
@@ -21,4 +18,13 @@ while number !=1:  # Creats a loop that stops when number = 1
 print(numbers) #show output
 
 
-#https://www.w3schools.com/python/python_lists_add.asp -> Reference for appending items to a list. 
+# https://www.w3schools.com/python/python_lists_add.asp 
+# https://www.programiz.com/python-programming/methods/list/append
+
+# Reference for appending items to a list. 
+
+
+# https://www.w3schools.com/python/python_while_loops.asp
+
+
+# Reference for using a while loop. 
