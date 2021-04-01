@@ -1,24 +1,28 @@
 import numpy as np # import tools to work with arrays.
-import matplotlib.pyplot as plt # import tools to make plots. 
+import matplotlib.pyplot as plt # import tools which support creating plots.
 
 
 
-x = np.linspace(0, 4, num = 1000, endpoint= True)  # interval is [0,4] on the number line, lenght of arraty is 1000, and I include the endpoint in the array. 
-fx = x # returns an array y =  (0,0.006,0.012, ...5)
-gx = x*x # return an attay y = (0,0.006^2,...)
-hx = x*x*x
+
+# assign the x values. This is an array on the interval [0,4], its lenght is 1000, and I include the endpoint in the array. 
+x = np.linspace(0, 4, num = 1000, endpoint= True)   
+# array operations are perfomed as follows: x*x= (x1*x1,X*2*x2,...)
+fx = x # returns an array y =  (0,0.006,0.012, ...5) f(x) = x
+gx = x*x # return an array y = (0,0.006^2,...) g(x) = x^2
+hx = x*x*x # h(x) = x^3
 
 
 
 #https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py
-# I closely follow this the guide from the documentation website. 
+# Apply the plt.plot() funtions to create the different parts of the plot.
 
-plt.plot(x,fx, label = 'f(x)=x') # plot each of the functions.  
+plt.plot(x,fx, label = 'f(x)=x') # plot each of the functions (x,y,label)
 plt.plot(x,hx, label = 'g(x)=x^2') 
 plt.plot(x,gx, label = 'h(x)=x^3')
 plt.title("My Plot") # create a title
 plt.legend() # add a legend
-plt.show()
+plt.show() # display the plot
+#plt.savefig("myplot.jpg") # save the plot
 
 
 

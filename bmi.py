@@ -1,15 +1,20 @@
 #Calculate BMI when the user inputs height and weight.
 
-Height = float(input('Enter Height:'))  # Assign the variable height to the users input for height.
-Weight = float(input('Enter Weight:')) # Store values as floats since height and weight can take decimal values. 
+
+# recieves the input after promting the user to enter height. Stores this value as a float. Assigns that value to the Height variable.
+height = float(input('Enter Height:')) 
+
+#  same as for Height
+weight = float(input('Enter Weight:'))
+
+#BMI = kg/(m^2). Assign the BMI variable. It is a function of the height and weight variables. 
+BMI = weight / (height*height) 
+
+#Print returns the output to the user. This prints a string "Your BMI is" and the value for BMI. format() is used to deal with the two data tpyes (string and float)
+print("Your BMI is {}". format(BMI))  
 
 
 
-BMI = Weight / (Height*Height) #BMI = kg/(m^2)
-
-
-
-print("Your BMI is {}". format(BMI))  #Returns output to user. Use format because we are printing two data types. 
 
 #https://www.w3schools.com/python/python_datatypes.asp
 #Information about specifying a data type.  

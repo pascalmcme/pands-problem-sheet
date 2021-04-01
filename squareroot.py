@@ -1,27 +1,29 @@
 
 
+# users input is assigned to the number variable
+Number = int(input('Please enter a postive number: '))  
+# we need an ititial guess of the square toor of number to apply newton's method.
+guess = 1 
+# how many times we want to repeat the method
+maxIterations = 10 
 
-Number = int(input('Please enter a postive number: '))  # users input is assigned to the number variable
-guess = 1 # we need an ititial guess of the square toor of number to apply newton's method
 
-maxIterations = 10 # how many times we want to iterate the method
-
+#create a funtion. It takes Number as the input and applies newton's method to approximate the square root.
 def newtonsMethod(Number):
  x0 = guess # the first value for x0 is the guess.
- 
- for i in range(maxIterations): # use a for loop to repeat the process for specified number of times
-  fx = x0**2 - Number #
-  yprime = 2*x0  #
-  x1 = x0 - fx/yprime # applying the recursive method to get x1, a closer guess to the square root of Number
-  x0=x1 # x0 is updated so that we can start the loop again. 
+ # Use a for loop for iteration. This will repeat the proccess according to maxIterations.
+ for i in range(maxIterations): 
+  fx = x0**2 - Number # applying formula to solve for f(x)
+  yprime = 2*x0 # applying formula to solve for f'(x)
+  x1 = x0 - fx/yprime # applying the method to get x1, a closer guess to the square root of Number
+  x0=x1 # x0 is updated so that we can start the loop again.
 
  return x1  # when the loop is completed for the specified iterations the function returns x1, the best approximation for the root of Number. 
 
  
  
 
-
-print(newtonsMethod(Number)) # prints the reult of the function newtonsMethod
+print(newtonsMethod(Number)) # call the function newtonsMethod(Number) and print the result. 
   
 
 

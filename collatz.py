@@ -1,21 +1,27 @@
 
-
-numbers = [] #create a list called numbers
-numbers.append(number) #To include the initial variable I first append the original number to the list.
-
-
-number = int(input('Please enter a positive integer:'))  #Initialise the loop. 
+#create a list called numbers
+numbers = [] 
 
 
-while number !=1:  # Creats a loop that stops when number = 1 
- if number % 2 == 0: # If Even                 
-   number = int(number / 2) # operation if the number is even
- else: # If odd
-    number = int((number * 3)+1) # operation if the number is odd
- numbers.append(number)  # Import to put this in the while loop, otherwise just left with the "1" in list
+#assign the number variable to the user's input.
+#store it as an integer.
+number = int(input('Please enter a positive integer:'))  
 
 
-print(numbers) #show output
+#To include the initial variable I first append the original number to the list with the append() function.
+numbers.append(number) 
+
+
+# This block of code repeats until the number is equal to one.
+while number !=1:  # stops when the number is equal to one. 
+ if number % 2 == 0: # If Even the indented operation is performed.              
+   number = int(number / 2) # take number and divide by two.
+ else: # If odd the indented operation is performed.
+    number = int((number * 3)+1) # mutiply number by three and add 1.
+ numbers.append(number)  # Important to append the number in while loop, otherwise just left with the "1" in list.
+
+
+print(numbers) #show output, list of numbers
 
 
 # https://www.w3schools.com/python/python_lists_add.asp 
