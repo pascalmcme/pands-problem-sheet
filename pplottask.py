@@ -15,8 +15,10 @@ hx = x*x*x # h(x) = x^3
 
 #https://matplotlib.org/stable/tutorials/introductory/usage.html#sphx-glr-tutorials-introductory-usage-py
 # Apply the plt.plot() funtions to create the different parts of the plot.
-
-plt.plot(x,fx, label = 'f(x)=x') # plot each of the functions (x,y,label)
+# plt.plot() automates the creation of the figure. 
+# For example there is no need to specify the figure on which the plots are placed.
+# There are other approaches to allow more customization.
+plt.plot(x,fx, label = 'f(x)=x') # plt.plot() a function. I use the arguements (x,y,label)
 plt.plot(x,hx, label = 'g(x)=x^2') 
 plt.plot(x,gx, label = 'h(x)=x^3')
 plt.title("My Plot") # create a title

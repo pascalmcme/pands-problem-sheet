@@ -10,15 +10,14 @@ today = date.strftime("%A")
 #print the output.
 print('today is {}'.format(today))
 
-# want weekdays as numbers so that I can use comparisons (start from 0 = Sunday)
-# apply strftime("%w") to date to get the weekday number and assign it to the weekdaynumber variable.
-weekdaynumber = date.strftime("%w")  
+
 # If today is saturday or sunday it will print the indented line.
-if weekdaynumber == 6  or weekdaynumber == 0:
-    print("It is the weekend! Hoora!") 
-# if today is a weekday it will print the indented line,   
+# or operator means if function is applied if one of these conditions are met. 
+if today == "Saturday"  or today == "Sunday":
+    print("It is the weekend! Hoora!") # output to user
+#  when the if condition is not met, else is applied.    
 else:
-     print("Today is weekday! Yay!") #Otherwise print this
+     print("Today is weekday! Yay!") # output to user
 
 
 

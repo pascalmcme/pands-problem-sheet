@@ -7,10 +7,12 @@ height = float(input('Enter Height:'))
 #  same as for Height
 weight = float(input('Enter Weight:'))
 
-#BMI = kg/(m^2). Assign the BMI variable. It is a function of the height and weight variables. 
+#BMI = kg/(m^2). Assign the BMI variable. 
+#It is a function of the height and weight variables. 
 BMI = weight / (height*height) 
 
-#Print returns the output to the user. This prints a string "Your BMI is" and the value for BMI. format() is used to deal with the two data tpyes (string and float)
+#Print returns the output to the user. This prints a string "Your BMI is" and the value for BMI. 
+#Format() is used to deal with the two data tpyes (string and float) inside print()
 print("Your BMI is {}". format(BMI))  
 
 

@@ -3,15 +3,16 @@
 
 # BMI.py 
 This program calculates the user's BMI. The user enters their height and weight when prompted and the value for their BMI is returned. The program works by using built in operators, multiplication and division, to create a BMI variable from height and weight.
+
 # secondString.py
 This program takes and input sentence from the user. It reversed the order of the sentence and returns every second letter. The program works by storing the sentence as a string. A new string is then created by slicing the original string backwards in increments of two. Finally, the new string is returned. 
+
 # collatz.py
 This program takes positive integer from the user. If the number is odd, it is multiplied by three and one is added. If the number is even, it is divided by two. The new number is then added to the sequence and the process is repeated for the new number. The process continues until the new number is equal to one. The sequence of numbers is then returned to the user.
 The program works by creating a list for the numbers to be stored in. The first number of the list is given by the user and it is also used as the first value in the loop. A while loop is used to perform the operations as we want the loop to end when the new number is equal to one. Within the loop the operation to be performed depends on the value that enters it (even or odd). If and else statements are used to deal with the two cases. The arithmetic is then performed, and the new number is appended to the list. When the loop is completed the list is returned. 
 
 # weekday.py
-
-This program lets the user know the day of the week and whether it is a weekday or weekend. The program uses the datetime module with the function date.today() which returns the current date. This date is then formatted. To return the day of the week I format the date to only show the day. To show whether it is a weekday or weekend, I format the day of the week as a number (0-6), with 6 and 0 indicating Saturday and Sunday. If and Else statements are used in combination with the weekday number to give the correct notification. 
+This program lets the user know the day of the week and whether it is a weekday or weekend. The program uses the datetime module with the function date.today() which returns the current date. This date is then formatted. To return the day of the week I format the date to only show the day. To show whether it is a weekday or weekend I use an if condition, which tells the user it is a weekend if the weekday is Saturday or Sunday. I use an else condition, which is applied when the if condition is not met, to tell the user its a weekday.  
 
 
 # squareroot.py
