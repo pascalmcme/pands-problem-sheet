@@ -4,7 +4,7 @@
 Number = int(input('Please enter a postive number: '))  
 # we need an ititial guess of the square root of number to apply newton's method.
 # the initial guess should not be zero, or zero will be in the denominator in the function.
-# 1 is a bad guess for very large numbers, will not get an accurate estimation. 
+
 guess = 1 
 
 # how many times we want to repeat the method
